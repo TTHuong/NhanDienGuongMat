@@ -79,7 +79,7 @@ namespace MultiFaceRec
             catch(Exception e)
             {
                 //MessageBox.Show(e.ToString());
-                MessageBox.Show("Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).", "Triained faces load", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Không có gì trong cơ sở dữ liệu nhị phân, vui lòng thêm ít nhất một khuôn mặt (Đơn giản chỉ cần huấn luyện nguyên mẫu bằng nút Thêm khuôn mặt).", "học gương mặt", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }

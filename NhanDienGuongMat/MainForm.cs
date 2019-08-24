@@ -92,7 +92,7 @@ namespace MultiFaceRec
             {
                 if (tencam == cbx_mayanh.Items[y].ToString())
                 {
-                    vitri = i;
+                    vitri = y;
                     break;
                 }
             }

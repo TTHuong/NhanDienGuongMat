@@ -1,4 +1,4 @@
-Đây là chương trình nhận diện khuôn mặt chống bị gank sử dụng EmguCV. Sau khi build xong thì sử dụng chương trình như sau:
+Đây là chương trình nhận diện khuôn mặt chống bị gank sử dụng EmguCV và AForge. Sau khi build xong thì sử dụng chương trình như sau:
 1 / đầu tiên chọn camera muốn dùng  việc này chỉ làm được 1 lần.
 2 / ấn nút bắt đầu để chương trình hoạt động
 3 / nếu chưa có hình nào để nhận diện thì chương trình sẽ báo "Không có gì trong cơ sở dữ liệu nhị phân, vui lòng thêm ít nhất một khuôn mặt (Đơn giản chỉ cần huấn luyện nguyên mẫu bằng nút Thêm khuôn mặt)."

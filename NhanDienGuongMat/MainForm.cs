@@ -1,10 +1,4 @@
-﻿
-//Multiple face detection and recognition in real time
-//Using EmguCV cross platform .Net wrapper to the Intel OpenCV image processing library for C#.Net
-//Writed by Sergio Andrés Guitérrez Rojas
-//"Serg3ant" for the delveloper comunity
-// Sergiogut1805@hotmail.com
-//Regards from Bucaramanga-Colombia ;)
+
 
 using System;
 using System.Collections.Generic;
@@ -78,7 +72,6 @@ namespace MultiFaceRec
             }
             catch(Exception e)
             {
-                //MessageBox.Show(e.ToString());
                 MessageBox.Show("Không có gì trong cơ sở dữ liệu nhị phân, vui lòng thêm ít nhất một khuôn mặt (Đơn giản chỉ cần huấn luyện nguyên mẫu bằng nút Thêm khuôn mặt).", "học gương mặt", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
@@ -185,7 +178,6 @@ namespace MultiFaceRec
         void FrameGrabber(object sender, EventArgs e)
         {
             label3.Text = "0";
-            //label4.Text = "";
             NamePersons.Add("");
 
 
@@ -264,12 +256,12 @@ namespace MultiFaceRec
                         //Names concatenation of persons recognized
                     for (int nnn = 0; nnn < facesDetected[0].Length; nnn++)
                     {
-                        names = names + NamePersons[nnn] + ", ";
+                        names = names + NamePersons[nnn] + ",";
                     }
                     //Show the faces procesed and recognized
                     imageBoxFrameGrabber.Image = currentFrame;
                     label4.Text = names;
-                    if(label4.Text!="")
+                    if(label4.Text!="" && label4.Text!=",")
                     {
                         if(cohieu==true)
                         {
